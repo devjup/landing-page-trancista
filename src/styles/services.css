@@ -1,33 +1,48 @@
 #services {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 24px 0;
+    text-align: left;
+    background-color: var(--background-color-1);
 
 }
+
+.section-title {
+    font-family: 'Inter', monospace, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.section-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 
 .service-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    max-width: 350px;
-    margin: 0 auto;
 }
 
 .service-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 250px;
-    min-height: 400px;
+    min-height: 300px;
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
     border-radius: 15px;
-    background-color: var(--background-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color-1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     /* Adiciona overflow hidden para evitar que a imagem ultrapasse os limites do card */
@@ -41,7 +56,8 @@
 
 .service-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
@@ -56,12 +72,14 @@
 
 .service-and-duration i {
     color: var(--neutral-color-7);
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
 .service-description {
-    font-size: 14px;
+    font-family: 'Inter', monospace, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
     text-align: left;
     margin-bottom: 10px;
     padding: 0 10px;
@@ -78,4 +96,62 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 10px;
+}
+
+.btn-service-active {
+    background-color: var(--secondary-color);
+    color: var(--neutral-color-1);
+    font-family: 'Cormorant Garamond', monospace, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-light{
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.btn-light:hover {
+    background-color: var(--button-hover-color);
+    color: var(--button-text-color);
+}
+
+.btn-light i {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+.btn-light:hover i {
+    color: var(--button-text-color);
+}
+.service-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.btn-service {
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: 'Cormorant Garamond', monospace, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-service:hover {
+    background-color: var(--button-hover-color);
+    color: var(--button-text-color);
 }

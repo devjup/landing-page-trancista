@@ -23,9 +23,13 @@
 
 body {
     background-color: var(--background-color);
-    color: var(--neutral-color-10);
-    line-height: 1.6;
+    
 }
+
+section {
+    padding: 28px 8%;
+}
+
 .btn-default {
     background-color: var(--button-color);
     color: var(--button-text-color);
@@ -38,17 +42,29 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.btn-default:hover {
+    background-color: var(--button-hover-color);
+    color: var(--neutral-color-1);
+}
+
 a{
     text-decoration: none;
 }
 
-.btn-default:hover {
-    background-color: var(--button-hover-color);
-    color: var(--button-text-hover-color);
+ul{
+    list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: 'Cormorant Garamond', 'Inter', monospace, sans-serif;
-    margin-bottom: 10px;
     color: var(--primary-color);
+}
+
+.section-description {
+    margin-top: 10px;
+    font-family: 'Inter', monospace, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+
 }

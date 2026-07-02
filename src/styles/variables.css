@@ -2,7 +2,7 @@
 
     --primary-color: #321B13; /*  #bc9e2b cor principal */
     --secondary-color:  #D08D54; /*#c8b360 cor secundária */
-    --terciary-color: #e0c878; /* cor terciária */
+    --tertiary-color: #e0c878; /* cor terciária */
     --quaternary-color: #f0e5b8; /* cor quaternária */
 
     --neutral-color-1: #ffffff;
@@ -18,11 +18,14 @@
     
     --button-color: #6F3F22; /* bc9e2b  cor dos botões */
     --button-hover-color: #D08D54; /* cor dos botões ao passar o mouse */
+    --button-hover-color-2: #1b1309;   /* cor dos botões ao passar o mouse */
     --button-active-color: #8a721c; /* cor dos botões ao clicar */
     --button-disabled-color: #d9d9d9; /* cor dos botões desabilitados */
     --button-text-color: #f2f2f2; /*#3d3205 cor do texto dos botões */
-    --button-text-hover-color: #1b1309; /* cor do texto dos botões ao passar o mouse */
+    --button-text-hover-color: #f2f2f2; /* cor do texto dos botões ao passar o mouse */
+    --button-text-hover-color-2: #D08D54; /* cor do texto dos botões ao passar o mouse */
     --accent-color: #ff5733;
 
-    --background-color: #f2f2f2;
+    --background-color: #F5E2CE;
+    --background-color-1: #f2f2f2;
 }
